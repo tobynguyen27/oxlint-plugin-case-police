@@ -1,0 +1,11 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"lint": "oxlint"
+	},
+	"devDependencies": {
+		"oxlint": "catalog:dev",
+		"oxlint-plugin-case-police": "workspace:*"
+	}
+}

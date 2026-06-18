@@ -1,0 +1,64 @@
+{
+	"name": "oxlint-plugin-case-police",
+	"version": "1.0.0",
+	"description": "Oxlint plugin for case-police",
+	"keywords": [
+		"case-police",
+		"oxlint",
+		"oxlint-plugin"
+	],
+	"homepage": "https://github.com/tobynguyen27/oxlint-plugin-case-police#readme",
+	"bugs": {
+		"url": "https://github.com/tobynguyen27/oxlint-plugin-case-police/issues"
+	},
+	"license": "MIT",
+	"author": "Toby Nguyen <hi@tobynguyen.net>",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tobynguyen27/oxlint-plugin-case-police.git"
+	},
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": "./dist/index.mjs",
+		"./dirs": "./dist/dirs.mjs",
+		"./worker": "./dist/worker.mjs",
+		"./package.json": "./package.json"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "vp pack",
+		"dev": "vp pack --watch",
+		"test": "vp test",
+		"check": "vp check",
+		"prepublishOnly": "vp run build",
+		"prepare": "vp config",
+		"bump": "bumpp"
+	},
+	"dependencies": {
+		"case-police": "catalog:prod",
+		"mlly": "catalog:prod",
+		"pathe": "catalog:prod",
+		"synckit": "catalog:prod"
+	},
+	"devDependencies": {
+		"@types/node": "catalog:types",
+		"@typescript/native-preview": "catalog:types",
+		"bumpp": "catalog:scripts",
+		"typescript": "catalog:types",
+		"vite-plus": "catalog:build"
+	},
+	"peerDependencies": {
+		"@oxlint/plugins": "catalog:dev",
+		"oxlint": "catalog:dev"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"packageManager": "pnpm@11.8.0"
+}
