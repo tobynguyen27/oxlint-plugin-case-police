@@ -10,10 +10,10 @@ catalogs:
     vite-plus: latest
   dev:
     vitest: ^4.1.9
-    '@oxlint/plugins': ^1.70.0
-    oxlint: ^1.70.0
+    '@oxlint/plugins': ^1.72.0
+    oxlint: ^1.72.0
   types:
-    '@types/node': '^25.9.3'
+    '@types/node': '^25.9.4'
     '@typescript/native-preview': 7.0.0-dev.20260618.1
     typescript: ^6.0.3
   scripts:
